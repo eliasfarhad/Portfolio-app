@@ -3,7 +3,7 @@ var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
 
-var DB_URL = 'postgres://localhost:5432/bulletinboard'
+//var DB_URL = 'postgres://localhost:5432/bulletinboard'
 var port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());

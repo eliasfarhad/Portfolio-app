@@ -1,0 +1,128 @@
+body {
+    background: url("http://imgs.tuts.dragoart.com/how-to-draw-forests-forest-backgrounds_1_000000013031_5.png") no-repeat center center fixed;
+    font-family: Georgia;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home {
+    background: url("http://www.zastavki.com/pictures/originals/2013/Nature___Seasons___Autumn__039922_.jpg") no-repeat center center fixed;
+    font-family: Georgia;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    
+    font-family: Courier New;
+}
+
+#greeting {
+    font-size: 30px;
+}
+
+#home-content {
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+#col1 {
+    float: left;
+    margin-right: 0px;
+    display: inline-block;
+    width: 300px;
+}
+
+#col2 {
+    clear: right;
+}
+
+li {
+    padding-top: 10px;
+}
+
+#content {
+    background: url("http://wallzoa.com/wp-content/uploads/2013/06/solid-green-backgrounds.jpg") no-repeat center center fixed;
+    font-family: Georgia;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    margin: 0 auto;
+    margin-top: 150px;
+    padding-top: 20px;
+    min-height: 500px;
+    width: 500px;
+}
+
+#headline {
+    padding-left: 50px;
+}
+
+#form {
+    background: url("http://www.solidbackgrounds.com/images/1600x1200/1600x1200-rich-black-solid-color-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#list {
+    margin-left: 20px;
+}
+
+#nav-part {
+    clear: both;
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+#navigation {
+    padding-left: 30px;
+}
+
+#review {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#review-main {
+    padding-left: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: maroon;
+}

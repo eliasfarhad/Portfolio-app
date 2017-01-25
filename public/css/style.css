@@ -5,6 +5,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 150%;
 }
 
 #home {
@@ -16,7 +22,12 @@ body {
     background-size: cover;
     color: white;
     
-    font-family: Courier New;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 150%;
+    /*font-family: Courier New;*/
 }
 
 #greeting {
@@ -26,6 +37,7 @@ body {
 #home-content {
     margin-left: 100px;
     margin-right: 500px;
+    margin-top: 50px;
 }
 
 #col1 {
@@ -52,10 +64,11 @@ li {
     background-size: cover;
     
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
     padding-top: 20px;
-    min-height: 500px;
-    width: 500px;
+    min-height: 550px;
+    width: 550px;
+    border-radius: 5px;
 }
 
 #headline {
@@ -83,15 +96,17 @@ input {
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 15px;
+    letter-spacing: 1.5px;
 }
 
 textarea {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    font-weight: bold;
+    font-size: 12px;
     border-radius: 5px;
     margin-bottom: 15px;
+    letter-spacing: 1.5px;
 }
 
 #list {
@@ -100,7 +115,7 @@ textarea {
 
 #nav-part {
     clear: both;
-    margin-top: 150px;
+    margin-top: 110px;
     font-size: 25px;
 }
 

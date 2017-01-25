@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 //var DB_URL = 'postgres://localhost:5432/bulletinboard'
 var port = process.env.PORT || 3000;
 
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -49,7 +50,7 @@ app.post('/blog', function (req, res) {
 
 
 
-app.listen('3000', function(){
+app.listen(port, function(){
     console.log("Now listening to port no 3000.......");
 })
 

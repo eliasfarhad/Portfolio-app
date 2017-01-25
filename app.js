@@ -32,13 +32,13 @@ app.get('/blog', function (req, res) {
   })
 })
 
-app.get('/:id', function(req, res){
-    pg.connect('process.env.DATABASE_URL', function(err, response, done){
-        client.query(`select * from messages where id ='${req.params.id}'`, function(err, result){
-            res.render('review', {blog:result.rows[0]})
-    })
-  })
-})
+//app.get('/:id', function(req, res){
+//    pg.connect('process.env.DATABASE_URL', function(err, response, done){
+//        client.query(`select * from messages where id ='${req.params.id}'`, function(err, result){
+//            res.render('review', {blog:result.rows[0]})
+//    })
+//  })
+//})
 
 app.post('/blog', function (req, res) {
     pg.connect('process.env.DATABASE_URL', function(err, response, done){

@@ -18,14 +18,12 @@ app.set('views', './views');
 
 
 app.get('/', function(req, res) {
-    pg.connect('process.env.DATABASE_URL', function(err, response, done) {
-        res.render('home');
-    })
+        response.render('home');
 })
 
 
 app.get('/blog', function (req, res) {
-    pg.connect('process.env.DATABASE_URL',function(err, response, done){
+    pg.connect('process.env.DATABASE_URL',function(err, client, done){
         client.query('select * from messages',function(err, result){
             res.render('posts', {data:result.rows});
     })
@@ -33,7 +31,7 @@ app.get('/blog', function (req, res) {
 })
 
 app.get('/:id', function(req, res){
-    pg.connect('process.env.DATABASE_URL', function(err, response, done){
+    pg.connect('process.env.DATABASE_URL', function(err, client, done){
         client.query(`select * from messages where id ='${req.params.id}'`, function(err, result){
             res.render('review', {blog:result.rows[0]})
     })
@@ -41,7 +39,7 @@ app.get('/:id', function(req, res){
 })
 
 app.post('/blog', function (req, res) {
-    pg.connect('process.env.DATABASE_URL', function(err, response, done){
+    pg.connect('process.env.DATABASE_URL', function(err, client, done){
         client.query(`insert into messages(title, body) values ('${req.body.title}','${req.body.messages}')`,function(err,result){
             res.redirect('/blog');
     })

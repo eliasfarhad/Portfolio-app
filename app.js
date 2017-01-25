@@ -32,13 +32,13 @@ app.get('/blog', function (req, res) {
   })
 })
 
-//app.get('/:id', function(req, res){
-//    pg.connect('process.env.DATABASE_URL', function(err, response, done){
-//        client.query(`select * from messages where id ='${req.params.id}'`, function(err, result){
-//            res.render('review', {blog:result.rows[0]})
-//    })
-//  })
-//})
+app.get('/:id', function(req, res){
+    pg.connect('process.env.DATABASE_URL', function(err, response, done){
+        client.query(`select * from messages where id ='${req.params.id}'`, function(err, result){
+            res.render('review', {blog:result.rows[0]})
+    })
+  })
+})
 
 app.post('/blog', function (req, res) {
     pg.connect('process.env.DATABASE_URL', function(err, response, done){
@@ -58,11 +58,9 @@ app.listen(port, function(){
 
 
 
-
-
-
-
 /*
+
+
 var express = require('express');
 var pg = require('pg');
 var bodyParser = require('body-parser');
@@ -122,5 +120,4 @@ app.post('/blog', function (req,res) {
 
 app.listen('3000', function(){
   console.log("Now listening to port no 3000.......");
-})
-*/
+})*/

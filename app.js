@@ -18,7 +18,7 @@ app.set('views', './views');
 
 
 app.get('/', function(req, res) {
-        response.render('home');
+        res.render('home');
 })
 
 
